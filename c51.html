@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        div {
+            width: auto;
+            height: auto;
+            text-align: center;
+            position: relative;
+        }
+        div::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: green;
+            z-index: -1;
+        }
+        div#d2::before {
+            background-color: red;
+        }
+        div::before {
+            color: yellow;
+            font-weight: bold;
+        }
+        p {
+            margin: 0;
+            padding: 1em;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        <p>
+            welcome to Sca
+        </p>
+    </div>
+    <div id="d2">
+        <p>
+            welcome to Sca
+        </p>
+    </div>
+</body>
+</html>
