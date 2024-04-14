@@ -1,0 +1,54 @@
+img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+}
+#flextype{
+     display: flex;
+     flex-direction: row; 
+    margin: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: #333; 
+}
+
+p {
+    font-style: italic; 
+}
+
+
+h6 {
+    color: #e74c3c; 
+}
+
+
+#flextype div {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+#flextype div + div {
+    margin-left: 20px;
+}
+
+#flextype {
+    justify-content: space-between; 
+    background-color: #f0f0f0; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+    border-color: #3498db; /* Change the border color on hover */
+}
