@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        class person{
+            constructor(fname,lname){
+                this.fname=fname;
+                this.lname=lname;
+            }
+            get fullName(){
+                return `$(this.fname+" "+this.lname)`;
+            }
+        
+            set fullname(name){
+                let arr=name.split(" ");
+                fname=arr[0];
+                lname=arr[1];
+            } 
+        }
+        let p=new person("Amit","Singh");
+        document.write("Full name is:" +p.fullname);
+        p.fullNam="ram";
+        document.write("<br>full Name is:" +p.fullName);
+    </script> -->
+    <script>
+        class person {
+            constructor(fname, lname) {
+                this.fname = fname;
+                this.lname = lname;
+            }
+            get fullName() {
+                return `${this.fname} ${this.lname}`;
+            }
+
+            set fullName(name) {
+                let arr = name.split(" ");
+                this.fname = arr[0];
+                this.lname = arr[1];
+            }
+        }
+
+        let p = new person("Amit", "Singh");
+        document.write("Full name is: " + p.fullName);
+        p.fullName = "ram","singh";
+        document.write("<br>Full name is: " + p.fullName);
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

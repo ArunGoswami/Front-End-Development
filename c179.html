@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>React App</title>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+ <div id="root"></div>
+ <script type="text/babel">
+    function Mynum() {
+      let myNums = [1, 2, 3, 4, 6, 5];
+      let num = myNums[Math.floor(Math.random() * myNums.length)];
+      return (
+        <div>
+          <p>Number is {num}</p>
+          <small>It is an {num % 2 === 0 ? 'Even' : <b>Odd</b>} number</small>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<Mynum />, document.querySelector("#root"));
+ </script>
+</body>
+</html>

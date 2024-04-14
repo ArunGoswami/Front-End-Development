@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags and title -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <script>
+    <div id="root"></div>
+//  <script type="text/babel">
+        function Myapp(){
+          let today=new date();
+          return <p> Current date and time are{today}</p>
+        }
+
+        ReactDOM.render(<Myapp/>,document.querySelector("#root"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags and title -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+
+    </script>
+</head>
+<body>
+    <script>
+    <div id="root"></div>
+ 
+        function Myapp(){
+            return <p> The new Random Number(Math.random()*10)</p>;
+        }
+
+        ReactDOM.render(<Myapp/>,document.querySelector("#root"));
+    </script>
+</body>
+</html>

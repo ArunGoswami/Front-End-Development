@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>React App</title>
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    </head>
+
+<body>
+    <div id="root">
+    </div>
+    <script type="text/babel">
+    function date(){
+    let today=new Date();
+    let para = <p>Current date and time are {today.toString()}</p>
+    return para;
+    }
+    ReactDOM.render(
+    React.createElement(date),
+    document.querySelector("#root")    
+    );
+ </script>
+</body >
+</html >

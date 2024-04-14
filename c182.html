@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class emp{
+            static company="Google";
+            constructor(name,salary){
+                this.ename=name;
+                this.salary=salary;
+            }
+            show(){
+                document.write("Name:"+this.ename+",salary:"+this.salary,emp.company);
+                document.write("<br>");
+            }
+        }
+        let e1=new emp("Amit",45000.0);
+        let e2=new emp("Ravi",45000.0);
+        let e3=new emp("ajay", 60000.0);
+        e1.show();
+        e2.show();
+        e3.show();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

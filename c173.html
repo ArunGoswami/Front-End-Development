@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>React App</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+    function MyApp(){
+        let myheading=React.createElement
+        ("h1",null,"The most popular love symbol  ",
+        React.createElement("span",null, "emoji")
+        );
+    
+        return myheading;
+    }
+    ReactDOM.render(
+        React.createElement(MyApp),
+        document.querySelector("#root")
+    );
+    </script>
+</body>
+</html>

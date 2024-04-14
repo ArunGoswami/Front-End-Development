@@ -1,0 +1,42 @@
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@7.13.14/babel.min.js"></script>
+    <script type="text/babel">
+      function ContactList() {
+        const [contacts, setContacts] = React.useState([]);
+        const [newContact, setNewContact] = React.useState("");
+
+        const handleInputChange = (event) => {
+          setNewContact(event.target.value);
+        };
+
+        const addContact = () => {
+          setContacts([...contacts, newContact]);
+          setNewContact("");
+        };
+
+        return (
+          <div>
+            <h1>Contact List</h1>
+            <ul>
+              {contacts.map((contact, index) => (
+                <li key={index}>{contact}</li>
+              ))}
+            </ul>
+            <input
+              type="text"
+              value={newContact}
+              onChange={handleInputChange}
+            />
+            <button onClick={addContact}>Add Contact</button>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<ContactList />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

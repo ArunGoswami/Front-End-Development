@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Greeting(props) {
+        let{who,from}=props;
+        let myElement = <h1> Greeting {props.who} from {props.from}</h1>;
+        return myElement;
+      }
+    
+      ReactDOM.render(<Greeting who="sachin" from="Ravi" />, document.getElementById('root'));
+    </script>
+  </body>
+</html>
