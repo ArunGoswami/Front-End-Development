@@ -1,0 +1,50 @@
+// Function to prompt the user for marks in each subject
+function promptMarks(subject) {
+  var marks = parseFloat(prompt("Enter marks for " + subject + ":"));
+  return marks;
+}
+
+// Function to calculate the average of marks
+function calculateAverage(marksArray) {
+  var sum = 0;
+  for (var i = 0; i < marksArray.length; i++) {
+    sum += marksArray[i];
+  }
+  return sum / marksArray.length;
+}
+
+// Array to store marks in each subject
+var marksArray = [];
+
+// Prompt the user for marks in each subject
+for (var i = 1; i <= 5; i++) {
+  var subject = "Subject " + i;
+  var marks = promptMarks(subject);
+  marksArray.push(marks);
+}
+
+// Calculate the average marks
+var average = calculateAverage(marksArray);
+
+// Check if the student passes
+var pass = false;
+var passedSubjects = 0;
+for (var i = 0; i < marksArray.length; i++) {
+  if (marksArray[i] >= 60) {
+    passedSubjects++;
+  }
+}
+
+if (passedSubjects >= 4 && average >= 60) {
+  pass = true;
+}
+
+// Print the average marks
+console.log("Average marks: " + average.toFixed(2));
+
+// Print if the student passes or not
+if (pass) {
+  console.log("Congratulations! You passed.");
+} else {
+  console.log("Sorry, you did not pass.");
+}

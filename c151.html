@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <!-- <script>
+        let birthyear=prompt("Enter your birth year");
+        let currentyear=newDate().getfullyear();
+        let age=currentyear-birthyear;
+        while(birthyear<o || isNaNbirthyear() || birthyear>currentyear){
+            birthyear=prompt("invaid value");
+            if(age>=18){
+                document.year("you are eligible to vote");
+            }
+            else{
+                document.year("you are eligible to vote");  
+            }
+        }
+        
+    </script> -->
+    <script>
+        let birthYear = prompt("Enter your birth year:");
+        let currentYear = new Date().getFullYear();
+        let age = currentYear - birthYear;
+        
+        while (isNaN(birthYear) || birthYear <= 0 || birthYear > currentYear) {
+            birthYear = prompt("Invalid input! Please enter a valid birth year:");
+        }
+        
+        if (age >= 18) {
+            document.write("You are eligible to vote!");
+        } else {
+            document.write("You are not eligible to vote yet.");
+        }
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

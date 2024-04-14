@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="loginform">
+        Login Id:<input name="txtusername" type="text" id="userid"><br>Password:
+        <input name="txtpassword" id="userpwd"><br>
+        <input name="btnlogin" type="submit" value="Login" id="login">
+    </form>    
+    <script>
+        let myForm = document.forms.loginform;
+        let btn = myForm.btnlogin;
+        let username = myForm.txtusername;
+        let password = myForm.txtpassword;
+
+        btn.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevent form submission
+            let user = username.value;
+            let pwd = password.value;
+            alert(`Username: ${user}\nPassword: ${pwd}`);
+        });
+    </script>
+</body>
+</html>

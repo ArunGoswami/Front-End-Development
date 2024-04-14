@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<script>
+        function start(){
+            setInterval(showmessage, 1000);
+        }
+      
+         function showmessage(){
+            console.log(new Date());
+        }
+        function stop(){
+            console.log("{id is" +id);
+            clearinterval(id);
+        }
+
+</script>
+</head>
+<body>
+    <input type="button" onclick="satrt()" value="start"/>
+    
+    <input type="button" onclick="start()" value="stop"/>
+</body>
+</html>

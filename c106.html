@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function download(url,p){
+        settimeout(()=>{
+            console.log(`downloading ....${url}`);
+            p(url);
+            
+        },3000);
+    }
+        function process(url){
+            console.log(`processing....${url}`);
+
+        }
+        let image="http://www.scalive.in/courses.jpg";
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

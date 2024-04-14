@@ -1,0 +1,41 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function decorate() {
+        let elements = document.querySelectorAll(".highlight");
+        elements.forEach(item => {
+            item.style.border = "solid 2px red";
+        });
+    }
+</script>
+<body>
+    <ul id="nav1" class="highlight">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ul>
+    <ul id="nav2" class="highlight">
+        <li>f</li>
+        <li>g</li>
+        <li>h</li>
+        <li>i</li>
+        <li>j</li>
+    </ul>
+    <ul id="nav3" class="highlight">
+        <li>k</li>
+        <li>l</li>
+        <li>m</li>
+        <li>n</li>
+        <li>o</li>
+    </ul>
+    <input type="button" value="add bar" onclick="decorate();"/>
+</body>
+</html> -->

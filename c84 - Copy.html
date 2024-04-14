@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    function greeting(){
+        document.write(`function called with $(arguements.length)arguements<br>`);
+     for(let name of arguements){
+document.write(`Good evening $(name)<br>`);
+     }
+     document.write("<br><br>");
+    }
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        greeting("amit","sachin","ravi");
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function greeting() {
+            document.write(`function called with ${arguments.length} argument(s)<br>`);
+            for (let name of arguments) {
+                document.write(`Good evening ${name}<br>`);
+            }
+            document.write("<br><br>");
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        greeting("amit", "sachin", "ravi");
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="c.css">
+    <script>
+        function decorate(){
+        let para=document.querySelector("p");
+        para.classlist.add("error");
+        }
+        function undecorate(){
+            let para=document.querySelector("p");
+            para.classList.remove("error");
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur doloribus facilis voluptas enim vitae natus voluptates, porro veritatis totam nisi dolore ipsam! Odit nihil ea officia eveniet voluptatibus quo amet.
+
+    </p>
+    <input type="button" value="add class" onclick="decorate();">
+    <input type="button" value="remove class" onclick="undecorate();">
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555555;
+            font-weight: bold;
+            position: relative;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #cccccc;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #ffffff;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Additional styles for icons */
+        .input-icon {
+            position: relative;
+        }
+
+        .input-icon i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            color: #888888;
+        }
+    </style>
+    <title>Sign up with SCA</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign up with SCA</h1>
+
+        <form>
+            <label for="name" class="input-icon">
+                Full Name:
+                <input type="text" id="name" name="name" required>
+                <i class="fas fa-user"></i> <!-- Font Awesome user icon -->
+            </label>
+
+            <label for="email" class="input-icon">
+                Email:
+                <input type="email" id="email" name="email" required>
+                <i class="fas fa-envelope"></i> <!-- Font Awesome envelope icon -->
+            </label>
+
+            <label for="address" class="input-icon">
+                Address:
+                <input type="text" id="address" name="address" required>
+                <i class="fas fa-map-marker-alt"></i> <!-- Font Awesome map marker icon -->
+            </label>
+
+            <label for="contact" class="input-icon">
+                Contact Number:
+                <input type="tel" id="contact" name="contact" required>
+                <i class="fas fa-phone"></i> <!-- Font Awesome phone icon -->
+            </label>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

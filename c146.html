@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Our Trainer</h3>
+    <div>This is a div</div>
+    <ul>
+        <li>Mr</li>
+        <li>Ms</li>
+        <li>Mr</li>
+        <li>Mr</li>
+    </ul>
+
+    <script>
+        let listenItems = document.querySelectorAll("li");
+
+        listenItems.forEach(item => {
+            item.addEventListener("click", () => {
+                console.log("li clicked");
+            });
+        });
+
+        let ul = document.querySelector("ul");
+
+        ul.addEventListener("click", () => {
+            console.log("ul clicked");
+        });
+
+        let div = document.querySelector("div");
+
+        div.addEventListener("click", () => {
+            console.log("div clicked");
+        });
+    </script>
+</body>
+</html>

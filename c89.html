@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let count = 1;
+        let id;
+    
+        function printNos() {
+            document.write(`<br>${count}`);
+            count++;
+            if (count == 11) {
+                document.write("<br>done!!!");
+                clearInterval(id);
+            }
+        }
+    
+        id = setInterval(printNos, 1000);
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

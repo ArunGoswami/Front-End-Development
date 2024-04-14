@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .highlight{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: Aerial;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+      function operate() {
+     let div=document.querySelector("div");
+     let children=Array.from(div.children);
+        children.foreach(item=>{
+            item.classlist.add();
+        });
+    
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2 align="center">welcome to java</h2>
+      <h3>our mission</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,
+        harum excepturi assumenda minima temporibus odit a inventore illum
+        impedit aut vitae ipsa aliquam rem laudantium dolorem autem? Molestias,
+        asperiores non?
+      </p>
+      <h3>our courses</h3>
+      <ul>
+        <li>c</li>
+        <li>c++</li>
+        <li>java</li>
+        <li>python</li>
+      </ul>
+    </div>
+    <input type="button" value="click me" onclick="operate()" />
+  </body>
+</html>
