@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3>demo on element properties</h3>
+    <h1 id="head1">hello</h1>
+    <input type="text" id="tb1" name="tb1" value="tb1">
+   <hr>
+   <script>
+    const h1=document.getelementById("head1");
+    document.write(`{h1.innertext}<br>`);
+
+    const tb=document.getelementById("tb1");
+    document.write(`{tb.value}<br>`);
+    tb.value=``;
+    </script>    
+</body>
+</html>

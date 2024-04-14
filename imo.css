@@ -1,0 +1,18 @@
+h2, pre, h3, ol,li, span, fieldset {
+    text-align: center;
+}
+fieldset{
+    width: 80%;
+    align-items: auto;
+    margin-left:100px;
+
+}
+body{
+    background-color:antiquewhite;
+}
+ol{
+    align-items: center;
+}
+li{
+    align-items: center;
+}

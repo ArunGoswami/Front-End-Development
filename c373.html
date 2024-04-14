@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>demo on element properties (data manipulation)</h3>
+    <h1 id="head1">hello</h1>
+    <input type="" id="tb1" name="tb1" value="1000">
+    <hr>
+    <script>
+    	const h1 = document.getElementById("head1");
+		document.write(`${h1.innerText}<br>`);
+		h1.innerText=`Hi`;	  
+		h1.innerText+=` Siva`;
+    </script>
+      const tb=document.getelementById("tb1");
+      document.write('${tb.value}<br>');
+      tb.value=1234;
+      tb.value=``;
+
+</h1>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Demo</title>
+</head>
+<body>
+    <h3>demo on grade</h3>
+    <table>
+        <tr>
+            <td>
+                <label for="slno">Name</label>
+                <input type="text" id="slno" autofocus>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="slno1">Roll No</label>
+                <input type="text" id="slno1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="slno2">HTML</label>
+                <input type="text" id="slno2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="slno3">CSS</label>
+                <input type="text" id="slno3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="slno4">JS</label>
+                <input type="text" id="slno4">
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">
+                <button onclick="getresult()">Get Result</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <output id="total"></output><br>
+                <output id="average"></output><br>
+                <output id="grade"></output><br>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function getresult() {
+            let hm = +document.getElementById("slno2").value;
+            let cm = +document.getElementById("slno3").value;
+            let jm = +document.getElementById("slno4").value;
+
+            let s = hm + cm + jm;
+            let avg = s / 3;
+
+            if (hm < 39 && cm < 39 && jm < 39) {
+                document.write("Fail");
+            } else if (avg > 50) {
+                document.write("Pass");
+            }
+        }
+    </script>
+</body>
+</html>
+

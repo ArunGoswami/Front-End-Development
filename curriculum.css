@@ -1,0 +1,28 @@
+#flexbox{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    color: green;
+}
+h3{
+    color: green;
+}
+button{
+    color: aqua;
+}
+#curr{
+    box-shadow: 5px 5px 10px #000;
+  
+}
+#curr1{
+    box-shadow: 5px 5px 10px #000;
+
+}
+#curr2{
+    box-shadow: 5px 5px 10px #000;
+
+}
+#curr3{
+    box-shadow: 5px 5px 10px #000;
+}

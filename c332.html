@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>finding number of two sum</h3>
+    <label for="">first number</label><br>
+    <input type="text" id="firstnum" autofocus>
+  <br>
+  <label>second number</label><br>
+  <input type="text" id="secondnum" autofocus>
+  <br>
+
+  <button onclick="result.value=firstnum.value+secondnum.value">+</button>
+  <button onclick="result.value=firstnum.value-secondnum.value">+</button>
+  <button onclick="result.value=firstnum.value*secondnum.value">+</button>
+  <button onclick="result.value=firstnum.value%secondnum.value">+</button>
+  <br>
+  <output id="op"></output>
+  <script>
+    function addition(){
+        let x,y,res;
+        x=+firstnum.value;
+        y=+secondnum.value;
+        res=x+y;
+      op.value="sum is "+res;
+    }
+  </script>
+</body>
+</html>
