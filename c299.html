@@ -1,0 +1,20 @@
+<!--  example on		"input"		tag -->						 
+<!DOCTYPE html>				 
+<html lang="en"> 
+  <head>
+    <title>Ex50</title>
+    <link rel="icon" href="logo2.svg">		
+  </head>
+  <body>		
+		<h2>demo on	file uploading control</h2>		
+		<form action="upload" method="post" enctype="multipart/form-data">	
+			<input type="file"> <!-- any type, any size, 1 file -->
+			<br>
+			<input type="file" id="f" name="f" multiple>  <!-- any type, any size, N-files -->
+			<br>
+			<input type="file" id="f2" name="f2" accept=".pdf,.docx">
+			<br>
+			<button type="submit">Upload</button>
+		</form>
+  </body>
+</html>

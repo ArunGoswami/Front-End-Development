@@ -1,0 +1,89 @@
+ex55.html
+<!--  Student Admin form-->						 
+<!DOCTYPE html>				 
+<html lang="en"> 
+  <head>
+    <title>Ex55</title>
+    <link rel="icon" href="logo2.svg">		
+	<link rel="stylesheet" href="formstyles.css">
+  </head>
+  <body>			
+	<div class="container">
+		<h1 align="center"><u>Registration Form</u></h1>
+		<form action="registration.html" autocomplete="off">
+			<p>
+				<label>Fullname</label> <span>*</span> <bR>
+				<input type="text" id="fna" name="fna" required autofocus> 
+			</p>
+ 			<p>
+				<label>Contact number</label> <span>*</span> <bR>
+				<input type="text" id="phone" name="phone" required maxlength="10"> 
+			</p>
+  			<p>
+				<label>Email Id</label> <span>*</span> <bR>
+				<input type="email" id="mid" name="mid" required> 
+			</p>
+ 			<p>
+				<label>Date of Birth</label> <bR>
+				<input type="date" id="dob" name="dob"> 
+			</p>
+ 			<p>
+				<label>Gender</label> <bR>
+				<input type="radio" id="gen1" name="gender" value="male" checked>  
+				<label>Male</label> &nbsp; 
+				<input type="radio" id="gen2" name="gender" value="female">  
+				<label>FeMale</label> &nbsp; 
+				<input type="radio" id="gen3" name="gender" value="other">  
+				<label>Others</label> &nbsp; 
+			</p>
+			<p>
+				<label>Which Course?</label> <br>
+				<select id="course" name="course">
+					<option value="c">C programme</option>
+					<option value="cpp">C++</option>
+					<option value="cj">Corejava</option>
+					<option value="aj">Advjava</option>
+					<option value="spring">Spring</option>
+					<option value="fsj">Full Stack Java</option>
+					<option value="c#">C#.net</option>
+					<option value="asp">ASP.net</option>
+					<option value="fsdn">Full Stack .Net</option>
+					<option value="html-js">HTML-JavaScript</option>
+					<option value="angular">Angular</option>
+					<option value="react">React</option>
+					<option value="node">NodeJS</option>
+					<option value="php">PHP</option>
+					<option value="python">Python</option>
+					<option value="dj">DJango</option>
+					<option value="flask">Flask</option>
+					<option value="oracle">Oracle</option>
+					<option value="mysql">MySQL</option>
+					<option value="mssql">MS Sql Server</option>
+					<option value="mongo">MongoDB</option>
+					<option value="aws">AWS</option>
+					<option value="xml-ws">XML-Webservice</option>
+					<option value="unix">Unix/Linux</option>
+				</select>
+			</p>	
+			<p>
+				<label>Mode of Training</label> <bR>
+				<select id="mot" name="mot">
+					<option value="classroom">Classroom Training</option>
+					<option value="online">Online Training</option>
+					<option value="placement">Placement Training</option>
+					<option value="weekend">Weekend Training</option>
+					<option value="project"> Project Training</option>
+					<option value="internship">Internship</option>
+				</select>
+			</p>
+			<p align="center">
+				<input type="checkbox" id="tc" name="tc" value="true">
+				<label>I Accepted Terms & Conditions</label>
+			</p>
+			<p align="center">
+				<button type="submit" name="sb"> Register </button>
+			</p>
+		</form>
+	</div> 
+  </body>
+</html>

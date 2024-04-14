@@ -1,0 +1,21 @@
+ex41.html
+<!-- example "input" tag  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Ex47</title>
+  <link rel="icon"href="logo1.webp">
+ </head>
+ <body>
+	<h2>demo on   file  uploading</h2>	
+	<form action="uploadfile.aspx" method="post" enctype="multipart/form-data"> 
+		<input type="file">  <!-- any type, any size, 1 file -->
+		<bR> 
+		<input type="file" id="f1" name="f1" multiple>  <!-- any type, any size, N-files -->
+		<br>
+		<input type="file" id="f2" name="f2" accept=".pdf,.docx">
+		<bR>
+		<button type="submit"> Upload </button>
+	</form> 
+ </body> 
+</html>
