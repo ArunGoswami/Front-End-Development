@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br>
+
+      <label for="resume">Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
+
+      <label for="cover-letter">Cover Letter:</label>
+      <textarea id="cover-letter" name="cover-letter" rows="5" cols="50" required></textarea><br>
+
+      <label for="position">Position:</label>
+      <select id="position" name="position" required>
+        <option value="">Please select a position</option>
+        <option value="frontend-developer">Frontend Developer</option>
+        <option value="backend-developer">Backend Developer</option>
+        <option value="ui-designer">UI Designer</option>
+        <option value="ux-designer">UX Designer</option>
+        <option value="product-manager">Product Manager</option>
+      </select><br>
+
+      <label for="salary-requirements">Salary Requirements:</label>
+      <input type="number" id="salary-requirements" name="salary-requirements" required><br>
+
+      <label for="availability-date">Availability Date:</label>
+      <input type="date" id="availability-date" name="availability-date" required><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

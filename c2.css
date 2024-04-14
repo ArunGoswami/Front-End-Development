@@ -1,0 +1,93 @@
+
+body {
+    background-color: rgba(128, 124, 128, 0.614);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  /* Search form styles */
+  .search {
+    margin-bottom: 20px;
+  }
+  
+  /* To-do list styles */
+  .todos {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-group-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .list-group-item span {
+    flex: 1;
+  }
+  
+  .list-group-item .delete {
+    color: #dc3545;
+    cursor: pointer;
+  }
+  
+  .list-group-item .delete:hover {
+    color: #c82333;
+  }
+  
+  /* Add form styles */
+  .add {
+    margin-bottom: 20px;
+  }
+  
+  .add label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .add input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add input[type="text"]:focus {
+    outline: none;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
